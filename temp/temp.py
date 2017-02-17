@@ -8,16 +8,12 @@ def temp():
     # 필요부분 추출
     summary = feed['entries'][0]['summary']
 
-
     tempSt = summary.find('<temp>')
     tempEn = summary.find('</temp>')
 
+    nowTemp = summary[tempSt + 6:tempEn]
 
-    nowTemp = summary[tempSt +6 :tempEn]
-
-
-    print('현재온도 : '+ nowTemp)
+    print('현재온도 : ' + nowTemp)
     return nowTemp
 
-
-print(temp())
+# print(Temp.temp(0))

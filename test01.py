@@ -1,8 +1,11 @@
 import win32com.client
 import webbrowser
-import temp
+import temp.temp as temp
 
 import testHead
+
+
+
 
 excel = win32com.client.Dispatch("Excel.Application")
 excel.Visible = True
@@ -43,16 +46,18 @@ url = 'http://naver.com'
 #chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
 
 # Windows
-chrome_path = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
-webbrowser.get(chrome_path).open(url)
-
-print(chrome_path)
-print(url)
+# chrome_path = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
+# webbrowser.get(chrome_path).open(url)
+#
+# print(chrome_path)
+# print(url)
 
 # 닫기
-#excel.Application.Quit()
+excel.Application.Quit()
 
 
+
+print(temp.temp() )
 
 
 
