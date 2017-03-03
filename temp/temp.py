@@ -16,4 +16,4 @@ def temp():
     print('현재온도 : ' + nowTemp)
     return nowTemp
 
-# print(Temp.temp(0))
+#print(temp())
