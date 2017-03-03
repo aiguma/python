@@ -6,3 +6,5 @@ elif sys.platform.startswith('linux'):
     print('linux')
 elif sys.platform.startswith('darwin'):
     print('mac')
+
+
