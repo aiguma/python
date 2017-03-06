@@ -15,6 +15,12 @@ def chkNowDate():
     nowDate = now.strftime('%Y-%m-%d')
     return nowDate
 
+def logDate():
+    now = datetime.datetime.now()
+
+    nowDate = now.strftime('%Y%m%d')
+    return nowDate
+
 def chkNowTime():
     now = datetime.datetime.now()
 
