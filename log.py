@@ -25,7 +25,7 @@ if sys.platform.startswith('win32'):
     fileHandler = logging.FileHandler("D:\\work\\" + logFile)
 elif sys.platform.startswith('linux'):
     print('linux')
-    fileHandler = logging.FileHandler("./etc/log/" + logFile)
+    fileHandler = logging.FileHandler("/home/pi/myPython/" + logFile)
 elif sys.platform.startswith('darwin'):
     print('mac')
     fileHandler = logging.FileHandler("./etc/log/" + logFile)
