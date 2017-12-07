@@ -34,6 +34,9 @@ def btcTicker():
     print("bids-->", outVal2['bids'] )
 
 
+
+
+
     test = 0
     for  bids in outVal2['bids']:
         #print("for bids- ",bids, test)
